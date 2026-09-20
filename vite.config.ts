@@ -6,6 +6,11 @@ import { defineConfig } from "vite";
 const githubRepository = process.env.GITHUB_REPOSITORY?.split("/").at(-1);
 
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: ["index.html", "v2/index.html"],
+    },
+  },
   base:
     process.env.GITHUB_ACTIONS && githubRepository
       ? `/${githubRepository}/`
