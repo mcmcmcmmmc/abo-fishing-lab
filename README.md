@@ -14,6 +14,8 @@ npm run dev -- --port 5173 --strictPort
 
 打开 http://127.0.0.1:5173/ 。依赖已经安装时可以跳过 `npm install`。停止服务：终端按 Ctrl+C。
 
+推送到 GitHub 的 `main` 分支后，`.github/workflows/deploy-pages.yml` 会自动构建并发布到 GitHub Pages。构建会按仓库名生成正确的 Pages 资源路径，本地运行仍从域名根目录加载资源。
+
 ```bash
 npm run build   # 类型检查 + 静态生产构建，输出 dist/
 npm test        # 模型和训练逻辑测试
