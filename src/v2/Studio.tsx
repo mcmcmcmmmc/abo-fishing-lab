@@ -707,6 +707,9 @@ export function Studio() {
           <a href="../">
             打开第一版 <ArrowRight size={13} />
           </a>
+          <a href="../field/">
+            进入实战场 <ArrowRight size={13} />
+          </a>
         </footer>
       </main>
       {about && (
